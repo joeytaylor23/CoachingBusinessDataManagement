@@ -1,0 +1,28 @@
+<?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['username'])){
+?>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\jt136\Projects\Coaching Business Data Management\Admin\login.css">
+</head>
+
+<body>
+   <form>
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Username">
+
+        <label>Password:</label>
+        <input type="text" name="password" placeholder="Password">
+
+        <button type="submit">Login</button>
+</body>
+</html>
+<?php
+}
+else{
+    header("Location")
+}
